@@ -1,0 +1,92 @@
+/* نخلي كل شي مرتب */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* نخلي الصفحة بالنص */
+
+    
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("images/cnv.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* الصندوق الخارجي */
+.login-box {
+    background: rgba(212, 248, 212, 0.5); /* نفس اللون + شفافية */
+    backdrop-filter: blur(20px);
+
+    padding: 40px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    /* ظل خفيف */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* العنوان */
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+/* الحقول */
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* الزر */
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 8px;
+    background-color: #f8f9f9;
+    color: rgb(7, 1, 1);
+    cursor: pointer;
+}
+
+/* حركة عند المرور */
+.login-box button:hover {
+    background-color: #555;
+}
+
+/* النص تحت */
+.login-box p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* الرابط */
+.login-box a {
+    text-decoration: none;
+    color: #080808;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,162 @@
+body{
+    background-image: url("images/cnv.png");
+    font-family: "DynaPuff", system-ui;
+    margin: 90px 0 0 0; 
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 5px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: rgba(212, 248, 212,0.4);
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+.logo{
+    width: 75px;
+}
+
+.header-links a{
+    color:rgb(16, 20, 2);
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.header-links a:hover{
+    color: #f18080;
+}
+/* الكونتينر */
+.container{
+    padding: 40px;
+    text-align: center;
+    margin-left:50px;
+    max-width: 1000px;
+    margin: auto;
+}    
+
+
+h1{
+    color: #f5f5dc;
+    margin-bottom: 30px;
+}
+
+/* كل قسم */
+.section{
+    background: rgba(212, 248, 212, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.section h2{
+    margin-bottom: 20px;
+}
+
+/* الكروت */
+.cards{
+    display: flex;
+    justify-content:flex-start ;
+    gap: 20px;
+    transition: 0.3s;
+}
+
+/* الكرت */
+.card{
+    width: 180px;
+    background-color: #faeaf4;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card p{
+    margin-top: 10px;
+}
+
+/* نخفي الراديو */
+.card input{
+    display: none;
+}
+
+/* عند الاختيار */
+.card input:checked + img{
+    outline: 3px solid #f18080;
+}
+
+/* رفع ملف */
+.upload-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 700px;  
+}
+
+.upload-box input{
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);   
+ 
+}
+
+.upload-box textarea{
+    height: 80px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+
+    background: rgba(255, 255, 255, 0.2); 
+    color: #690137;
+     outline: none;
+}
+
+/* زر */
+.btn{
+    background-color: #f18080;
+    border-radius:15px ;
+    padding:10px 25px;
+    color:#070707;
+    border: none;  
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:rgba(252, 211, 232, 0.969);
+}
+.section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* اليسار */
+.left{
+    width: 65%;
+}
+
+/* اليمين (الصورة) */
+.right img{
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
