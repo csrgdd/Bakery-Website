@@ -1,55 +1,54 @@
-body{
+
+body {
     background-image: url("images/cnv.png");
     font-family: "DynaPuff", system-ui;
-    margin: 90px 0 0 0; 
+    margin: 90px 0 0 0;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px 10px 5px;
-
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-
-    background-color: rgba(212, 248, 212,0.4);
+    background-color: rgba(212, 248, 212, 0.4);
     backdrop-filter: blur(10px);
-
     z-index: 1000;
 }
 
-.logo{
+.logo {
     width: 75px;
 }
 
-.header-links a{
-    color:rgb(16, 20, 2);
+.header-links a {
+    color: rgb(16, 20, 2);
     padding: 0 10px;
     text-decoration: none;
 }
 
-.header-links a:hover{
+.header-links a:hover {
     color: #f18080;
 }
+
 /* الكونتينر */
-.container{
+.container {
     padding: 40px;
     text-align: center;
-    margin-left:50px;
+    margin-left: 50px;
     max-width: 1000px;
     margin: auto;
-}    
+}
 
-
-h1{
+h1 {
     color: #f5f5dc;
     margin-bottom: 30px;
 }
 
 /* كل قسم */
-.section{
+.section {
     background: rgba(212, 248, 212, 0.5);
     backdrop-filter: blur(10px);
     padding: 25px;
@@ -57,20 +56,20 @@ h1{
     margin-bottom: 30px;
 }
 
-.section h2{
+.section h2 {
     margin-bottom: 20px;
 }
 
 /* الكروت */
-.cards{
+.cards {
     display: flex;
-    justify-content:flex-start ;
+    justify-content: flex-start;
     gap: 20px;
     transition: 0.3s;
 }
 
 /* الكرت */
-.card{
+.card {
     width: 180px;
     background-color: #faeaf4;
     border-radius: 20px;
@@ -78,85 +77,150 @@ h1{
     padding-bottom: 10px;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.card img{
+.card img {
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
-.card p{
+.card p {
     margin-top: 10px;
 }
 
 /* نخفي الراديو */
-.card input{
+.card input {
     display: none;
 }
 
 /* عند الاختيار */
-.card input:checked + img{
+.card input:checked + img {
     outline: 3px solid #f18080;
 }
 
 /* رفع ملف */
-.upload-box{
+.upload-box {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 700px;  
+    width: 700px;
 }
 
-.upload-box input{
+.upload-box input {
     padding: 8px;
     border-radius: 10px;
     border: none;
-    background: rgba(255, 255, 255, 0.4);   
- 
+    background: rgba(255, 255, 255, 0.4);
 }
 
-.upload-box textarea{
+.upload-box textarea {
     height: 80px;
     border-radius: 10px;
     padding: 10px;
     border: none;
-
-    background: rgba(255, 255, 255, 0.2); 
+    background: rgba(255, 255, 255, 0.2);
     color: #690137;
-     outline: none;
+    outline: none;
 }
 
 /* زر */
-.btn{
+.btn {
     background-color: #f18080;
-    border-radius:15px ;
-    padding:10px 25px;
-    color:#070707;
-    border: none;  
+    border-radius: 15px;
+    padding: 10px 25px;
+    color: #070707;
+    border: none;
     cursor: pointer;
 }
 
-.btn:hover{
-    color:rgba(252, 211, 232, 0.969);
+.btn:hover {
+    color: rgba(252, 211, 232, 0.969);
 }
-.section-content{
+
+.section-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 /* اليسار */
-.left{
+.left {
     width: 65%;
 }
 
 /* اليمين (الصورة) */
-.right img{
+.right img {
     width: 250px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsive - Mobile */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 8px 10px;
+    }
+
+    .logo {
+        width: 55px;
+    }
+
+    .header-links a {
+        padding: 0 4px;
+        font-size: 11px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px 12px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .card {
+        width: 140px;
+    }
+
+    .upload-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .upload-box input,
+    .upload-box textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .section-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

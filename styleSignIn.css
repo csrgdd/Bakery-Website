@@ -89,4 +89,21 @@ body {
     font-weight: bold;
 }
 
+.back-home {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #000000;
+    text-decoration: none;
+    font-family: "DynaPuff", system-ui;
+    font-size: 14px;
+    font-weight: bold
+    
+}
 
+.back-home:hover {
+    color: #ffc4c4;
+}
+.signup-page .back-home {
+    top: 10px;
+}
